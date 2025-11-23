@@ -24,6 +24,9 @@
   --border: #334155;
 }
 /* ====== Mobile Menu Show/Hide ====== */
+.mobile-toggle {
+  display: none;
+}
 @media (max-width: 768px) {
   .nav-menu {
     position: fixed;
@@ -308,10 +311,11 @@ h1 {
 
 /* ---------- Footer & Back-to-Top ---------- */
 .footer-float {
-  position: fixed;
+  /* position: ;
   bottom: 0;
   left: 0;
-  right: 0;
+  right: 0; */
+  margin-top: 70px;
   height: 70px;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
@@ -319,8 +323,9 @@ h1 {
   padding: 0 2rem;
   z-index: 999;
   display: flex;
+  flex-flow:  wrap column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   font-size: 0.9rem;
 }
 
